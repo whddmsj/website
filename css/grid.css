@@ -107,4 +107,8 @@
 	.background-img>img{
 		height: 60vh;
 	}
+	
+	.button {
+	    margin-bottom: 10px;
+	}
 }
