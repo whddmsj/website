@@ -1,0 +1,110 @@
+/***WHOLE SITE***/
+.main-container{
+	display:grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap:1.25rem;
+}
+
+/**PROJECTS IN LANDING***/
+.works{
+	grid-column: 1/span 12;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap:1.25rem;
+}
+
+.about{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2rem;
+}
+
+/*Media Queries=========================================================================================================*/
+
+/*Inbetween(860px)*/
+@media screen and (max-width:54em){
+	.about img{
+		grid-column: 1/span 4;
+	}
+
+	.about-info{
+		grid-column: 1/ span 4;
+	}
+
+	.background-img>img{
+		height: 70vh;
+	}
+
+	.services{
+		grid-template-columns: 1fr;
+	}
+
+	.landing-info{
+		padding: 3em;
+	}
+
+}
+
+/*Inbetween(721px)*/
+@media screen and (max-width:45.063em){
+	h1{
+		font-size:2.625rem;
+	}
+
+	h2{
+		font-size:2.15625rem;
+	}
+
+	h3{
+		font-size: 1.65rem;
+	}
+
+	h4{
+		font-size: 1.125rem;
+	}
+
+	.background-img>img{
+		height: 50vh;
+	}
+
+}
+
+/*Inbetween(450px)*/
+@media screen and (max-width:28.125em){
+	.landing-info{
+		grid-column: 1/span 12;
+	}
+
+	.landing-info h2{
+		font-size: 1.8rem;
+	}
+
+	.landing-info h5{
+		font-size: 1rem;
+	}
+
+	.nav-items-right>*+*{
+		margin-left:  1rem;
+	}
+
+	.works{
+		grid-template-columns: 1fr;
+	}
+
+	.footer {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer p{
+		font-size: 0.75rem;
+	}
+
+	.about{
+			margin: 0 10%;
+	}
+
+	.background-img>img{
+		height: 60vh;
+	}
+}
